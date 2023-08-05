@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import prdList from './data.json'
 import ProductList from './ProductList'
-import ProductDetail from './ProductDetail'
+import Modal from './Modal'
 
-const BTShoeShop = () => {
+
+const ShoeStore = () => {
     console.log({ prdList })
     const [productDetail, setProductDetail] = useState(prdList[0])
 
@@ -13,7 +14,7 @@ const BTShoeShop = () => {
 
     return (
         <div className="container mt-5">
-            
+
             <h1>Shoe Shop</h1>
 
             <ProductList
@@ -21,10 +22,10 @@ const BTShoeShop = () => {
                 handleProductDetail={handleProductDetail}
             />
 
-            <ProductDetail productDetail={productDetail} />
+            <Modal productDetail={productDetail} />
 
         </div>
     )
 }
 
-export default BTShoeShop
+export default ShoeStore

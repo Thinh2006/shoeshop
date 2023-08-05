@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import BTShoeShop from './BTShoeShop/BTShoeShop';
+import BTShoeShop from './BTShoeShop/ShoesStore';
 
 function App() {
   return (

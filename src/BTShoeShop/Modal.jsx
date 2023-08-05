@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductDetail = ({ productDetail }) => {
+const Modal = ({ productDetail }) => {
     console.log('productDetail: ', productDetail)
     // const { productDetail } = props
     return (
@@ -51,4 +51,4 @@ const ProductDetail = ({ productDetail }) => {
     )
 }
 
-export default ProductDetail
+export default Modal
