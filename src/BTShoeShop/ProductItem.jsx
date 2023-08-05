@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ProductItem = (props) => {
-    const { product, handleProductDetail, handleCarts } = props
+    const { product, handleProductDetail} = props
     return (
         <div className="col-3 mt-3">
             <div className="card">
@@ -12,9 +12,6 @@ const ProductItem = (props) => {
                     <div className="mt-3 d-flex justify-content-between">
                         <button
                             className="btn btn-success"
-                            onClick={() => {
-                                handleCarts(product)
-                            }}
                         >
                             Add To Cart
                         </button>

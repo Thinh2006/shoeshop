@@ -4,7 +4,7 @@ import ProductItem from './ProductItem'
 
 const ProductList = (props) => {
     console.log('props: ', props)
-    const { prdList, handleProductDetail, handleCarts } = props
+    const { prdList, handleProductDetail} = props
     return (
         <div className="row">
             {prdList.map((product) => (
@@ -12,7 +12,6 @@ const ProductList = (props) => {
                     key={product.id}
                     product={product}
                     handleProductDetail={handleProductDetail}
-                    handleCarts={handleCarts}
                 />
             ))}
         </div>
